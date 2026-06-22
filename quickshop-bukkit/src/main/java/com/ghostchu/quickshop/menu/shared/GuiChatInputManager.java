@@ -142,7 +142,7 @@ public class GuiChatInputManager implements Listener {
     return pendingInputs.containsKey(playerId);
   }
 
-  @EventHandler(priority = EventPriority.LOWEST)
+  @EventHandler(priority = EventPriority.LOW)
   public void onChat(final AsyncPlayerChatEvent event) {
 
     final UUID playerId = event.getPlayer().getUniqueId();
